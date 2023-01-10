@@ -3,7 +3,10 @@ Proyecto de Gestión y Trazabilidad de activos
 
 
 Esta version contiene los siguientes CDN y/o Librerias:
-Bootstrap
-JQuery
-Normalize
-rwdImageMaps
+
+<ul>
+<li>Bootstrap</li>
+<li>JQuery</li>
+<li>Normalize</li>
+<li>rwdImageMaps</li>
+</ul>
