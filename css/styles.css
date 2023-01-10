@@ -144,6 +144,14 @@ main {
     margin-top: 6vw;
 }
 
+#mapa-ruta img {
+    /*Configuración para imagen responsiva*/
+    border:0;
+    height:auto;
+    max-width:100%;
+    width:auto;  
+}
+
 #contenedor-caract {
     display: grid;
     grid-template-columns: 1fr 1.2fr;
@@ -189,6 +197,41 @@ footer {
     color: #C7D6E2;
     font-family: 'Noto Sans', sans-serif;
 }
+
+/* MODAL */
+#cont-mensaje-form {
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: #000000cc;
+    color: antiquewhite;
+    max-width: 100%;
+    min-width: 100%;
+    align-items: center;
+}
+
+#cont-mensaje-head {
+    display: relative;
+    position: absolute;
+    left: 87%;
+    transform: translateX(95%);
+    padding-bottom: -5%;
+}
+
+#cont-mensaje-titulo {
+    max-width: 87%;
+    min-width: 87%;
+    padding-top: 1.5vw;
+    
+}
+
+#cont-mensaje-body {
+    max-width: 95%;
+    min-width: 95%;
+}
+/* MODAL */
+
+
 
 /* Fuentes
 font-family: 'Noto Sans', sans-serif;
