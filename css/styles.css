@@ -4,16 +4,10 @@ font-family: 'Roboto', sans-serif;
 font-family: 'Work Sans', sans-serif; 
 */
 
-body {
-    height: 150vw;
-    /* background: #013564;
-    background: -moz-linear-gradient(-45deg, #013564 0%, #025096 74%, #014C8E 100%);
-    background: -webkit-linear-gradient(-45deg, #013564 0%, #025096 74%, #014C8E 100%);
-    background: linear-gradient(135deg, #013564 0%, #025096 74%, #014C8E 100%); */
-}
 
 main {
     margin-top: 7vw;
+    margin-bottom: 14vw;
 }
 
 .navbar {
@@ -86,3 +80,118 @@ main {
     transform: scale(105%);
 }
 
+#contenedor-presentacion {
+    /* margin-top: 15vw;
+    margin: 12vw 3vw; */
+    background-color: #f2f5ff;
+    width: 100%;
+    margin-right:0;
+    margin-left:0;
+    padding: 5vw;
+}
+
+#devices-img {
+    height: 24vw;
+}
+
+#cont-princ-1 {
+    display: flex;
+    flex-flow: column;
+    padding-top: 1vw;
+    padding-left: 5vw;
+    text-align: left;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+#titulo-conte {
+    margin-right: 0;
+}
+
+#highlight-text {
+    color:#3d8296;
+    font-size: 2.8vw;
+}
+
+#cont-img {
+    margin-right:0;
+    padding-right: 20vw;
+}
+
+.btn-principal {
+    font-size: 1.2vw;
+    font-weight: 200;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: normal;
+    letter-spacing: 0.1vw;
+    border-radius: 5px;
+    border-color: #00000000;
+    background-color: #5C82A6;
+    color: aliceblue !important;
+    margin-top: 4vw;
+    margin-right: 6vw;
+    padding: 0.5vw 2vw;
+    margin-left: 4vw;
+}
+
+.btn-principal:hover {
+    transform: scale(105%);
+}
+
+#mapa-ruta {
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    margin-top: 6vw;
+}
+
+#contenedor-caract {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    margin-top: 5.5vw;
+    background-color: #f2f5ff;
+
+}
+
+#cont-cara-der {
+    display: flex;
+    justify-content: end;
+}
+
+#foto-barriles {
+    opacity:90%;
+}
+
+#cont-cara-txt {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Noto Sans', sans-serif;
+    margin-left: 5vw;
+    margin-right: 3vw;
+    margin-top: 3.5vw;
+    
+}
+
+#cont-cara-txt h1 {
+    font-size: 2vw;
+    font-weight: 700;
+}
+
+#cont-cara-txt p{
+    color: #99A98F;
+}
+
+footer {
+    background-color: #3D6D79;
+    min-height: 20vw;
+}
+
+#cont-ext-ft {
+    color: #C7D6E2;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+/* Fuentes
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Work Sans', sans-serif; 
+*/
