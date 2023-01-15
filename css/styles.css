@@ -1,9 +1,18 @@
+@import url(footer.css);
+
 /* Fuentes
 font-family: 'Noto Sans', sans-serif;
 font-family: 'Roboto', sans-serif;
 font-family: 'Work Sans', sans-serif; 
 */
 
+a, li {
+    text-decoration: none; 
+}
+
+a:hover {
+    color:#99A98F; 
+}
 
 main {
     margin-top: 7vw;
@@ -188,46 +197,63 @@ main {
     color: #99A98F;
 }
 
-footer {
-    background-color: #3D6D79;
-    min-height: 20vw;
-}
-
-#cont-ext-ft {
-    color: #C7D6E2;
-    font-family: 'Noto Sans', sans-serif;
-}
 
 /* MODAL */
-#cont-mensaje-form {
-    font-family: 'Nunito', sans-serif;
+.modal-body, .container-fluid{
+    padding: 0;
+}
+.modal-container {
+    display: flex;
+    background-color: #f2f5ff;
+}
+
+#modal-cont-foto {
+    width:100%;
+}
+
+#foto-modal {
+    height: 100%;
+    width: 100%;
+    opacity: 60%;
+}
+
+.modal-container {
+    border-radius: 25px;
+}
+
+.modal-content {
+    background-color: none;
+    border: none;
+}
+
+#txt-modal {
     display: flex;
     flex-direction: column;
-    background-color: #000000cc;
-    color: antiquewhite;
-    max-width: 100%;
-    min-width: 100%;
-    align-items: center;
-}
-
-#cont-mensaje-head {
-    display: relative;
     position: absolute;
-    left: 87%;
-    transform: translateX(95%);
-    padding-bottom: -5%;
+    font-family: 'Noto Sans', sans-serif;
+    text-align: end;
+    justify-content: end;
+    right: 5%;
+    top: 3%;
+    width: 28vw;
 }
 
-#cont-mensaje-titulo {
-    max-width: 87%;
-    min-width: 87%;
-    padding-top: 1.5vw;
+#txt-modal-titulo{
     
+    color: rgb(41, 43, 46);
+    text-shadow: 1px 2px 5px #3d8296;
+    font-size: 3vw;
+    font-weight: 1000;
+    letter-spacing: 0.4vw;
+    font-family: 'Noto Sans', sans-serif;
+    font-style: italic;
 }
 
-#cont-mensaje-body {
-    max-width: 95%;
-    min-width: 95%;
+#txt-modal-parrafo{
+    letter-spacing: 0.2vw;
+    font-weight: 400;
+    padding-left: 30%;
+    padding-top: 5%;
 }
 /* MODAL */
 
@@ -237,4 +263,5 @@ footer {
 font-family: 'Noto Sans', sans-serif;
 font-family: 'Roboto', sans-serif;
 font-family: 'Work Sans', sans-serif; 
+font-family: 'Poppins', sans-serif;
 */

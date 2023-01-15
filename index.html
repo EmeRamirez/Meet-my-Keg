@@ -11,9 +11,7 @@
   <link rel="stylesheet" href="css/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;400&family=Roboto:wght@300;400;700&family=Work+Sans:wght@200;300;400;600;700;900&display=swap"
-    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,400;0,900;1,900&family=Poppins:wght@600&family=Roboto:wght@300;400;700&family=Work+Sans:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -85,7 +83,7 @@
     <div id="mapa-ruta">
       <img src="assets/img/mapa-filtro-con-txt2.png" alt="" usemap="#map-img">
 
-      <map name="map-img" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+      <map name="map-img" data-bs-toggle="modal" data-bs-target="#exampleModal">
         <area target="_top" alt="barril-1" title="barril-1" href="javascript:;" coords="282,128,349,204" shape="rect" onclick="clickMap(0)">
         <area target="" alt="cod-barra" title="cod-barra" href="javascript:;" coords="442,126,538,201" shape="rect" onclick="clickMap(1)">
         <area target="" alt="trackeo" title="trackeo" href="javascript:;" coords="619,128,673,204" shape="rect" onclick="clickMap(2)">
@@ -97,18 +95,29 @@
       </map>
     </div>
 
-    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-body" id="cont-mensaje-form">
-            <div id="cont-mensaje-head"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
-            <div id="cont-mensaje-titulo"><h1 id="h1-mensaje">Inserte Texto</h1></div>
-            <div id="cont-mensaje-body"><h2 id="h2-mensaje">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi vitae est molestiae expedita sapiente doloribus dicta dolorum similique ut placeat sunt quo aliquid harum, optio vel deleniti fuga enim amet.</h2></div>
+    
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="container-fluid">
+          <div class="modal-container">
+            <div class="col-12" id="modal-cont-foto">
+              <img src="assets/img/barril-filling-res78-difu.png" alt="" id="foto-modal">
+              <div id="txt-modal">
+                <h1 id="txt-modal-titulo">No pierdas más Barriles</h1>
+                <h5 id="txt-modal-parrafo">Organiza tus despachos y retiros, minimiza las pérdidas.<h4>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- MAPA RUTA -->
+  </div>
+</div>
+
+
+
 
     <!-- Caracteristicas -->
     <div id="contenedor-caract">
@@ -138,21 +147,56 @@
   </main>
 
   <footer>
+
+    
+  
     <div class="col-12" id="cont-ext-ft">
-      <div id="cont-izq-ft" style="margin-left: 3vw;">
-        <img src="assets/img/meetmykeg-logoft.png" style="height:5vw;margin-top:3vw;"></img>
-        <h5 style="margin-top:2vw;">Contacto</h5>
+
+      <div id="cont-logo">
+        <img src="assets/img/meetmykeg-logoft.png" style="height:5vw;margin-top: 0.6vw"></img>
+      </div>
+
+      <div id="cont-izq-ft">
+        <h5><a href="contacto.html">Contacto</a></h5>
         <p style="margin-bottom:0;">+56 9 6748 4094</p>
-        <p>contactos@meetmykeg.com</p>
+        <p style="font-size: 1vw;">contactos@meetmykeg.com</p>
+        <h5>Síguenos</h5>
+        <div id="cont-rrss">
+          <i class="fa-brands fa-facebook-f fa-xl"></i>
+          <i class="fa-brands fa-instagram fa-xl"></i> 
+          <i class="fa-brands fa-twitter fa-xl"></i>       
+        </div>
 
       </div>
       <div id="cont-cen-ft">
-
+        <h5>Navegador</h5>
+        <ul style="padding: 0">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Iniciar Sesión</a></li>
+          <li><a href="#">Sobre Nosotros</a></li>
+          <li><a href="#">Envíanos un mensaje</a></li>
+        </ul>
       </div>
+
+      <div id="cont-cen-ft">
+        <h5>Información</h5>
+        <ul style="padding: 0">
+          <li><a href="#">Producto</a></li>
+          <li><a href="#">Planes</a></li>
+          <li><a href="#">Términos de Servicio</a></li>
+          <li><a href="#">Política de Privacidad</a></li>
+        </ul>
+      </div>
+
+      
+
       <div id="cont-der-ft">
-
+        <img src="assets/img/google-play-badge.png" alt="" style="height: 65px; width:fit-content; opacity: 83%;">
+        <img src="assets/img/appstore-badge.svg" alt="" style="height: 51px; opacity: 83%">
       </div>
-
+    </div>
+    <div id="copyright-txt">
+      <p>&copy; 2023 Meet my Keg - Derechos reservados</p>
     </div>
 
   </footer>
@@ -162,7 +206,7 @@
   <script src="https://kit.fontawesome.com/5cdadd804a.js" crossorigin="anonymous"></script>
   <script src="js/main.js"></script>
   <script src="js/lib/jquery.rwdImageMaps.min.js"></script>
-  <script>$(document).ready(function(e){$('img[usemap]').rwdImageMaps();});</script>
+  <!-- <script>$(document).ready(function(e){$('img[usemap]').rwdImageMaps();});</script> -->
 </body>
 
 </html>
