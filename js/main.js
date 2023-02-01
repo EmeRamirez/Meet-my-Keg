@@ -45,6 +45,22 @@ let clickMap = (opcion) => {
     }
 }
 
-// src="assets/img/barril-filling-res78-difu.png"
-/* <h1>No pierdas más Barriles</h1>
-<h5>Organiza tus despachos y retiros, minimiza las pérdidas.</h5> */
+
+//Funcion para validar formulario
+function validarForm(){
+    const forms = document.querySelectorAll('.needs-validation');
+
+    let estado = false; 
+
+    forms.forEach(form => {
+        if (form.checkValidity()) { 
+            estado = true;
+
+            document.querySelector('#notificacion-contacto').classList.remove('d-none');
+        };
+
+        form.classList.add('was-validated');
+    });
+
+    return estado;
+};  

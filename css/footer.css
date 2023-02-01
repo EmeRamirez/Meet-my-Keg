@@ -49,7 +49,6 @@ footer li {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
     padding-top: 1vw;  
 
 }
@@ -82,3 +81,47 @@ footer li {
     color:#7D92A5;
 }
 
+@media only screen and (max-width: 860px) {
+    #cont-cen-ft {
+        display: none;
+    }
+
+    #cont-ext-ft {
+        grid-template-columns: 0.6fr 1fr 1fr;
+    }
+
+    #brand-img-ft {
+        height: 8vw !important;
+    }
+
+    #cont-izq-ft {
+        display: flex;
+        flex-direction: row;
+        gap: 4vw;
+    }
+
+    #cont-izq-ft p {
+        font-size: large;
+    }
+
+    #copyright-txt {
+        font-size: 2vw !important;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    
+    #cont-izq-ft {
+        display: flex;
+        flex-direction: column;
+        gap: 4vw;
+    }
+
+    #cont-der-ft img {
+        height: 40px !important;
+    }
+
+    #copyright-txt {
+        font-size: 2.5vw !important;
+    }
+}
