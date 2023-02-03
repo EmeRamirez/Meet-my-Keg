@@ -81,6 +81,10 @@ font-family: 'Poppins', sans-serif;
     justify-content: center;
 }
 
+.fa-xmark:hover {
+    cursor: pointer;
+}
+
 @media only screen and (max-width: 860px) {
 
     .contenedor-contacto {
@@ -104,6 +108,10 @@ font-family: 'Poppins', sans-serif;
 
     .row {
         margin-left: 0;
+    }
+
+    .contenedor-contacto{
+        margin-top: 15vw;
     }
 
 }

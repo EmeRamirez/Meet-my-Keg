@@ -94,7 +94,7 @@ main {
     transform: scale(105%);
 }
 
-#contenedor-presentacion {
+.contenedor-presentacion {
     background-color: #f2f5ff;
     width: 100%;
     margin-right:0;
@@ -268,7 +268,16 @@ main {
 
 #login-oculto {
     display: none;
+
 }
+
+.contactate-form {
+    font-size: 3.2rem; 
+    font-weight: 800 !important; 
+    color:#3d8296 !important;
+    line-height: 50px;
+}
+
 
 @media only screen and (max-width: 900px) {
 
@@ -362,12 +371,14 @@ main {
         justify-content: flex-start;
         padding-top: 2vw;
         gap: 1vw;
-        margin-left: 6vw;
+        margin-left: 4vw;
     } 
     
     .navbar-nav a {
-        margin-right: 4vw ;
         padding: 0;
+        font-size: 2.5vw;
+        text-align: left;
+
            
     }
 
@@ -388,6 +399,11 @@ main {
    #botonera-princ {
     display: flex;
    }
+
+   .navbar-toggler {
+    margin-right: 5vw;
+    scale: 150%;
+}
 }
 
 @media only screen and (max-width: 480px) {
@@ -402,11 +418,13 @@ main {
     }
 
     .navbar-toggler {
-        margin-right: 5vw
+        margin-right: 5vw;
+        margin: 7vw;
+        scale: 150%;
     }
 
     .navbar-nav a{
-        font-size: 8px;
+        font-size: 16px;
         gap: 0;
     }
 
@@ -416,11 +434,24 @@ main {
     }
 
     #logo-img {
-        height: 35px;
+        height: 60px;
     }
   
     #login-oculto {
         font-size: 10px;
+    }
+
+    #cont-logo {
+        display: none;
+    }
+
+    #cont-ext-ft {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .contenedor-presentacion{
+        margin-top: 15vw;
     }
 }
 

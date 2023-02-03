@@ -12,6 +12,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,400;0,900;1,900&family=Poppins:wght@600;700&family=Roboto:wght@300;400;700&family=Work+Sans:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+  <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+  (function(){
+      emailjs.init("eJuQGV-DUaTIO3RbJ");
+  })();
+</script>
 </head>
 
 <body>
@@ -21,7 +29,7 @@
         <a class="navbar-brand" href="index.html"><img src="assets/img/meetmykeg-logo2.png" alt="" id="logo-img"></a>
         <!-- Boton Oculto Nv-->
         <a href="#" id="login-oculto" style="color: #3D6D79; font-size: 14px; gap:3px"><i
-          class="fa-solid fa-user" style="font-size: 22px"></i><span id="log-in-txt">Log In</span></a>
+          class="fa-solid fa-user" style="font-size: 30px"></i></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <!-- <span class="navbar-toggler-icon"></span> -->
@@ -66,7 +74,7 @@
     <div class="contenedor-contacto">
         <div id="texto-contacto">
             <h1 style="color:rgb(116, 116, 116);padding-bottom: 1vw; font-size: 1.6rem;"> ¿Tienes alguna duda?</h1>
-            <h1><span id="highlight-text" style="font-size: 3.2rem; font-weight: 800;">Contáctate con nosotros</span></h1>
+            <h1 class="contactate-form" >Contáctate con nosotros</h1>
             <h4 style="color:rgb(151, 149, 149);padding-top: 1vw; line-height: 32px;"> Rellena el formulario y te responderemos a la brevedad.</h4>
         </div>
         <div id="contenedor-formulario">
@@ -114,11 +122,6 @@
                     <hr class="my-4">
           
                     <!-- <div class="form-check">
-                      <input type="checkbox" class="form-check-input" id="same-address">
-                      <label class="form-check-label" for="same-address">Shipping address is the same as my billing address</label>
-                    </div>
-          
-                    <div class="form-check">
                       <input type="checkbox" class="form-check-input" id="save-info">
                       <label class="form-check-label" for="save-info">Save this information for next time</label>
                     </div> -->
@@ -129,25 +132,25 @@
                         <div class="notificacion-enviado">
                             <div><i class="fa-solid fa-check fa-xl"></i></div>
                             <div><h5 id="texto-notificacion">El mensaje se ha enviado exitosamente</h5></div>
-                            <div><i class="fa-solid fa-xmark fa-xl"></i></div>
+                            <div><i onclick="cerrarMsjSuccess()" class="fa-solid fa-xmark fa-xl"></i></div>
                         </div>
                         <hr class="my-4">
                         <!-- Este mensaje se muestra si se envió el mail-->
 
                         <!-- Este mensaje se muestra si NO se envió el mail-->
-                        <div class="notificacion-no-enviado d-none">
+                        <!-- <div class="notificacion-no-enviado d-none">
                             <div><i class="fa-solid fa-xmark fa-xl"></i></div>
                             <div><h5 id="texto-notificacion">El mensaje no se ha enviado, intenta más tarde</h5></div>
-                            <div><i onclick="cerrarNotificación" class="fa-solid fa-xmark fa-xl"></i></div>
+                            <button onclick="cerrarMsjSuccess()" type="button"><i class="fa-solid fa-xmark fa-xl"></i></button>
                         </div>
-                        <hr class="my-4 d-none">
+                        <hr class="my-4 d-none"> -->
                         <!-- Este mensaje se muestra si NO se envió el mail-->
                     </div>
                     <!-- Esta área debería aparecer o desaparecer si es que se envía el mail -->
 
           
                   </form>
-                  <button class="w-100 btn btn-lg" type="button" id="boton-submit" onclick="validarForm()">Enviar</button>
+                  <button class="w-100 btn btn-lg" type="button" id="boton-submit" onclick="enviarMail()">Enviar</button>
 
                 </div>
               </div>

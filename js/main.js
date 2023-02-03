@@ -55,8 +55,6 @@ function validarForm(){
     forms.forEach(form => {
         if (form.checkValidity()) { 
             estado = true;
-
-            document.querySelector('#notificacion-contacto').classList.remove('d-none');
         };
 
         form.classList.add('was-validated');
@@ -64,3 +62,24 @@ function validarForm(){
 
     return estado;
 };  
+
+function enviarMail() {
+    if (validarForm()){
+        var params = {
+            from_name : "Contacto Meet My Keg",
+            email_id : "contacto.meetmykeg@gmail.com",
+            user_name : document.querySelector('#firstName').value,
+            user_lastname : document.querySelector('#lastName').value,
+            user_email : document.querySelector('#email').value,
+            user_empresa : document.querySelector('#empresa').value,
+            message : document.querySelector('#textarea').value,
+        }
+        emailjs.send("service_m33t", "template_if9akze", params).then(function (res) {
+            document.querySelector('#notificacion-contacto').classList.remove('d-none');
+        });
+    };
+}
+
+function cerrarMsjSuccess(){
+    document.querySelector('#notificacion-contacto').classList.add('d-none');
+}
